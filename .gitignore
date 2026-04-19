@@ -1,20 +1,7 @@
-# Python
-__pycache__/
-*.py[cod]
-*$py.class
-
-# Virtual environments
 .venv/
-venv/
-env/
+__pycache__/
+*.pyc
 
-# Local/editor files
-.DS_Store
-.vscode/
-.idea/
+.python-version
+uv.lock
 .codex
-
-# Generated assignment output
-map/index.html
-iss.html
-demo/iss.html
