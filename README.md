@@ -18,7 +18,7 @@ It prints the people currently in space, then keeps updating a Folium map with t
 Install the packages:
 
 ```bash
-python -m pip install requests folium livereload
+python -m pip install .
 ```
 
 Start the live server and the main program in separate terminal instances:
