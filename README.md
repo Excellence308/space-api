@@ -32,3 +32,8 @@ python main.py
 ```
 
 Open the live server page in your browser. The browser must be connected to the live server, or refreshed after the live server is running, so it notices the connection.
+
+## Todo
+
+- Add timeouts and retries for API requests.
+- Use async so the map updates and live server can run together from main.py.
