@@ -15,7 +15,9 @@ It prints the people currently in space, then keeps updating a Folium map with t
 
 ## Run
 
-Install the packages:
+Run this project inside a Python virtual environment using Python 3.13 or newer.
+
+Install the dependencies inside your virtual environment:
 
 ```bash
 python -m pip install .
