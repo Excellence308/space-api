@@ -1,0 +1,34 @@
+# Space API
+
+Small Python project that fetches live space data from Open Notify.
+
+It prints the people currently in space, then keeps updating a Folium map with the current ISS position.
+
+## Requirements
+
+- Python 3.13 or newer
+- Internet connection
+- Python packages:
+  - `requests`
+  - `folium`
+  - `livereload`
+
+## Run
+
+Install the packages:
+
+```bash
+python -m pip install requests folium livereload
+```
+
+Start the live server and the main program in separate terminal instances:
+
+```bash
+python liveserver.py
+```
+
+```bash
+python main.py
+```
+
+Open the live server page in your browser. The browser must be connected to the live server, or refreshed after the live server is running, so it notices the connection.
