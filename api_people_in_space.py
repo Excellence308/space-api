@@ -11,9 +11,9 @@ def fetch_json(url: str):
         # Converts to dictionary and returns
         return r.json()
     else:
-        # If response is bad, print status code and exit
+        # If response is bad, print status code and return None
         print(f"Status code {r.status_code}. Expects 200")
-        exit()
+        return None
 
 
 # Calls fetch_json, if response is not None, normalize data and return it

@@ -9,16 +9,19 @@ import folium
 # Calls get_astronauts() and uses data to print nicely
 def display_people_in_space():
     data = api_people_in_space.get_astronauts()
-    if data is not None:
-        astronaut_count = data["number"]
-        astronaut_people = data["people"]
+    if data is None:
+        print("Kunne ikke hente data fra mennesker i verdensrommet.")
+        return
+    astronaut_count = data["number"]
+    astronaut_people = data["people"]
 
-        # Loops through list of astronauts and prints them as an ordered list
-        print(f"Det er {astronaut_count} mennesker i verdensrommet akkurat nå.")
-        i = 1
-        for astronaut in astronaut_people:
-            print(f"{i}. {astronaut['name']} - {astronaut['craft']}")
-            i += 1
+    # Loops through list of astronauts and prints them as an ordered list
+    # This should probably be done with enumerate
+    print(f"Det er {astronaut_count} mennesker i verdensrommet akkurat nå.")
+    i = 1
+    for astronaut in astronaut_people:
+        print(f"{i}. {astronaut['name']} - {astronaut['craft']}")
+        i += 1
 
 
 # Calls get_iss_position() and uses data to print nicely
