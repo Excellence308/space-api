@@ -18,10 +18,8 @@ def display_people_in_space():
     # Loops through list of astronauts and prints them as an ordered list
     # This should probably be done with enumerate
     print(f"Det er {astronaut_count} mennesker i verdensrommet akkurat nå.")
-    i = 1
-    for astronaut in astronaut_people:
+    for i, astronaut in enumerate(astronaut_people, start=1):
         print(f"{i}. {astronaut['name']} - {astronaut['craft']}")
-        i += 1
 
 
 # Calls get_iss_position() and uses data to print nicely
