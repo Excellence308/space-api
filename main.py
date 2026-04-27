@@ -1,9 +1,10 @@
 from time import sleep
 
+import folium
+
 # Imports other project files and dependencies
 import api_iss_position
 import api_people_in_space
-import folium
 
 
 # Calls get_astronauts() and uses data to print nicely

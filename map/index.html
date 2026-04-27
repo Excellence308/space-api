@@ -17,7 +17,7 @@
             <meta name="viewport" content="width=device-width,
                 initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
             <style>
-                #map_8c2aa568234b2746440d02b7522b21b3 {
+                #map_3e2f59aed1ffacd1a1897bb1c6c2bd01 {
                     position: relative;
                     width: 100.0%;
                     height: 100.0%;
@@ -54,16 +54,16 @@
 <body>
     
     
-            <div class="folium-map" id="map_8c2aa568234b2746440d02b7522b21b3" ></div>
+            <div class="folium-map" id="map_3e2f59aed1ffacd1a1897bb1c6c2bd01" ></div>
         
 </body>
 <script>
     
     
-            var map_8c2aa568234b2746440d02b7522b21b3 = L.map(
-                "map_8c2aa568234b2746440d02b7522b21b3",
+            var map_3e2f59aed1ffacd1a1897bb1c6c2bd01 = L.map(
+                "map_3e2f59aed1ffacd1a1897bb1c6c2bd01",
                 {
-                    center: [-8.648, -49.7041],
+                    center: [33.1024, 140.311],
                     crs: L.CRS.EPSG3857,
                     ...{
   "zoom": 6,
@@ -78,7 +78,7 @@
 
         
     
-            var tile_layer_c488e6b74c5905f5f6bd49c1edc18bfc = L.tileLayer(
+            var tile_layer_a10c1f899cb5ec9fc15e8d4f4f89c052 = L.tileLayer(
                 "https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png",
                 {
   "minZoom": 0,
@@ -95,17 +95,17 @@
             );
         
     
-            tile_layer_c488e6b74c5905f5f6bd49c1edc18bfc.addTo(map_8c2aa568234b2746440d02b7522b21b3);
+            tile_layer_a10c1f899cb5ec9fc15e8d4f4f89c052.addTo(map_3e2f59aed1ffacd1a1897bb1c6c2bd01);
         
     
-            var marker_8f189390df5139a6ee4c45bd2dfa2efc = L.marker(
-                [-8.648, -49.7041],
+            var marker_80f8dddb7bdbefa286bc9915f9e30329 = L.marker(
+                [33.1024, 140.311],
                 {
 }
-            ).addTo(map_8c2aa568234b2746440d02b7522b21b3);
+            ).addTo(map_3e2f59aed1ffacd1a1897bb1c6c2bd01);
         
     
-            var icon_9629c361466e15a057fc6dc5d702fddb = L.AwesomeMarkers.icon(
+            var icon_26293c978de8512b633bba0aaf3b76ca = L.AwesomeMarkers.icon(
                 {
   "markerColor": "lightblue",
   "iconColor": "white",
@@ -116,24 +116,24 @@
             );
         
     
-        var popup_6499d686859dba2da47135791bcc881a = L.popup({
+        var popup_1c0969eea67065e0a038a969f0dfd820 = L.popup({
   "maxWidth": "100%",
 });
 
         
             
-                var html_3366160141d7a0ff792f20390a7b520e = $(`<div id="html_3366160141d7a0ff792f20390a7b520e" style="width: 100.0%; height: 100.0%;">The ISS waves back!</div>`)[0];
-                popup_6499d686859dba2da47135791bcc881a.setContent(html_3366160141d7a0ff792f20390a7b520e);
+                var html_9ec6c97dee5da0e345d26d580f9e8664 = $(`<div id="html_9ec6c97dee5da0e345d26d580f9e8664" style="width: 100.0%; height: 100.0%;">The ISS waves back!</div>`)[0];
+                popup_1c0969eea67065e0a038a969f0dfd820.setContent(html_9ec6c97dee5da0e345d26d580f9e8664);
             
         
 
-        marker_8f189390df5139a6ee4c45bd2dfa2efc.bindPopup(popup_6499d686859dba2da47135791bcc881a)
+        marker_80f8dddb7bdbefa286bc9915f9e30329.bindPopup(popup_1c0969eea67065e0a038a969f0dfd820)
         ;
 
         
     
     
-            marker_8f189390df5139a6ee4c45bd2dfa2efc.bindTooltip(
+            marker_80f8dddb7bdbefa286bc9915f9e30329.bindTooltip(
                 `<div>
                      Wave to the ISS!
                  </div>`,
@@ -143,7 +143,7 @@
             );
         
     
-                marker_8f189390df5139a6ee4c45bd2dfa2efc.setIcon(icon_9629c361466e15a057fc6dc5d702fddb);
+                marker_80f8dddb7bdbefa286bc9915f9e30329.setIcon(icon_26293c978de8512b633bba0aaf3b76ca);
             
 </script>
 </html>
